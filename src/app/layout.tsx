@@ -62,6 +62,19 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="uk" className={montserrat.variable}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function(){
+            var D=1920;
+            function apply(){
+              var vw=window.innerWidth;
+              document.documentElement.style.zoom=(vw>=758&&vw<D)?(vw/D).toFixed(4):'';
+            }
+            apply();
+            window.addEventListener('resize',apply);
+          })();
+        `}} />
+      </head>
       <body className="min-h-full flex flex-col">
         <SiteHeader />
         {children}

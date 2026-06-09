@@ -4,15 +4,16 @@ html {
   scroll-behavior: smooth;
 }
 
+
 @theme {
-  --color-accent: #F6FF4B;
+  --color-accent: #f6ff4b;
   --color-surface: #080808;
   --color-surface-card: #111111;
-  --color-charcoal: #1D1D1B;
-  --color-ink: #0C081E;
+  --color-charcoal: #1d1d1b;
+  --color-ink: #0c081e;
   --color-muted: #393939;
   --font-sans: var(--font-montserrat);
-  --max-w-container: 1238px;
+  --max-w-container: 1440px;
 }
 
 @keyframes marquee {
