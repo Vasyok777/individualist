@@ -16,7 +16,7 @@ export function Hero() {
         className="w-full h-[400px] md:h-[577px] object-cover"
       />
 
-      <Container className="max-w-[1347px]">
+      <Container className="max-w-[1346px]">
         <div className="relative z-10 -mt-50 md:-mt-80 bg-white rounded-[16px] md:rounded-[30px] p-6 md:pt-9 md:pr-12.5 md:pb-10 md:pl-15">
           <div className="relative mb-6 md:mb-20">
             <div className="flex flex-row justify-between items-start mb-4 md:hidden">
