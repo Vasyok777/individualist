@@ -68,7 +68,9 @@ export default function RootLayout({
             var D=1920;
             function apply(){
               var vw=window.innerWidth;
-              document.documentElement.style.zoom=(vw>=758&&vw<D)?(vw/D).toFixed(4):'';
+              if(vw<758) document.documentElement.style.zoom='0.8';
+              else if(vw<D) document.documentElement.style.zoom=(vw/D).toFixed(4);
+              else document.documentElement.style.zoom='';
             }
             apply();
             window.addEventListener('resize',apply);
