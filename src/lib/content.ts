@@ -10,10 +10,10 @@ import type {
 
 export const CASES: CaseCard[] = [
   {
-    name: "WAUDOG",
+    name: "Smart Ecom",
     badgeLabel: "Напрямок робіт: повний комплекс у напрямку комунікацій.",
     badgeValue: "Ринки США та Польщі",
-    image: "/case/1.png",
+    image: "/case/1.jpg",
   },
   {
     name: "Gentle Hurricane",
@@ -31,25 +31,25 @@ export const CASES: CaseCard[] = [
     name: "WauDog",
     badgeLabel: "Повний комплекс у напрямку комунікацій.",
     badgeValue: "Ринок Польщі",
-    image: "/case/4.png",
+    image: "/case/4.jpg",
   },
   {
     name: "NORBA",
     badgeLabel: "Go-to-market стратегія",
     badgeValue: "для ринку США",
-    image: "/case/5.png",
+    image: "/case/5.jpg",
   },
   {
     name: "Mosqitter",
     badgeLabel: "Go-to-market стратегія, брейнсторм сесія",
     badgeValue: "для ринку США",
-    image: "/case/6.png",
+    image: "/case/6.jpg",
   },
   {
     name: "Cutluxe",
     badgeLabel: "Повний комплекс у напрямку комунікацій.",
     badgeValue: "Ринок США",
-    image: "/case/7.png",
+    image: "/case/7.jpg",
   },
 ];
 
@@ -123,7 +123,10 @@ export const KNOWLEDGE_ITEMS: KnowledgeItem[] = [
     num: "08",
     segments: [
       { text: "Ми сформували тест у форматі " },
-      { text: "чек-апу, який найкраще підсвітить готовність вашого бізнесу", bold: true },
+      {
+        text: "чек-апу, який найкраще підсвітить готовність вашого бізнесу",
+        bold: true,
+      },
       { text: " або його точки росту." },
     ],
   },
@@ -147,7 +150,10 @@ export const RESULTS_ITEMS: ResultItem[] = [
   {
     segments: [
       { text: "Можливість " },
-      { text: "обрати найкращий ринок для розширення вашого бізнесу", bold: true },
+      {
+        text: "обрати найкращий ринок для розширення вашого бізнесу",
+        bold: true,
+      },
       { text: " з меншими ризиками для продукту та ніші" },
     ],
   },
@@ -210,8 +216,8 @@ export const FOOTER_NAV_LINKS: FooterLink[] = [
 ];
 
 export const FOOTER_LEGAL_LINKS: FooterLink[] = [
-  { label: "Privacy Policy", href: "/privacy-policy.pdf" },
-  { label: "Terms and conditions", href: "/terms-and-conditions.pdf" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms and conditions", href: "/terms-and-conditions" },
   { label: "Про інтенсив", href: "#knowledge" },
 ];
 

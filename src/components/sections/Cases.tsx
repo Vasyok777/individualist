@@ -4,11 +4,11 @@ import { Container, Title } from "@/components/ui";
 import type { CaseCard } from "@/types";
 
 const BAR_IMAGES = [
-  "/case/8.png",
-  "/case/9.png",
-  "/case/10.png",
-  "/case/11.png",
-  "/case/12.png",
+  "/case/8.JPG",
+  "/case/9.JPG",
+  "/case/10.JPG",
+  "/case/11.JPG",
+  "/case/12.JPG",
 ];
 
 function Card({ card }: { card: CaseCard }) {

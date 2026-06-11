@@ -36,8 +36,8 @@ export function Hero() {
             </div>
 
             <div className="hidden md:flex absolute top-0 right-0 flex-col items-end gap-10">
-              <div className="bg-accent rounded-[17px] w-105.75 h-26.5 pt-6.5 pr-7.75 pb-6.5 pl-12.25">
-                <p className="font-medium italic text-charcoal text-[30.588px] leading-[32.325px] tracking-[-1.529px]">
+              <div className="bg-accent rounded-[17px] w-107 pt-6.5 pr-7.75 pb-6.5 pl-12.25">
+                <p className="font-bold italic text-charcoal text-[30.588px] leading-[32.325px] tracking-[-1.529px]">
                   5-денний інтенсивний
                   <br />
                   воркшоп
@@ -63,8 +63,7 @@ export function Hero() {
                 </span>
                 <br />
                 ВИХІД БРЕНДІВ НА
-                <br className="hidden md:block" />
-                МІЖНАРОДНИЙ РИНОК
+                <br className="hidden md:block" /> МІЖНАРОДНИЙ РИНОК
               </h1>
             </div>
           </div>

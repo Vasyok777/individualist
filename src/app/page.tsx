@@ -9,21 +9,22 @@ import { Results } from "@/components/sections/Results";
 import { Materials } from "@/components/sections/Materials";
 import { ForWhom } from "@/components/sections/ForWhom";
 import { HowItLooks } from "@/components/sections/HowItLooks";
+import { AnimateIn } from "@/components/AnimateIn";
 
 export default function Page() {
   return (
     <main>
       <Hero />
-      <International />
-      <Format />
-      <WhoWeAre />
-      <Cases />
-      <Author />
-      <Knowledge />
-      <Results />
-      <Materials />
-      <ForWhom />
-      <HowItLooks />
+      <AnimateIn><International /></AnimateIn>
+      <AnimateIn delay={50}><Format /></AnimateIn>
+      <AnimateIn><WhoWeAre /></AnimateIn>
+      <AnimateIn><Cases /></AnimateIn>
+      <AnimateIn><Author /></AnimateIn>
+      <AnimateIn><Knowledge /></AnimateIn>
+      <AnimateIn><Results /></AnimateIn>
+      <AnimateIn><Materials /></AnimateIn>
+      <AnimateIn><ForWhom /></AnimateIn>
+      <AnimateIn><HowItLooks /></AnimateIn>
     </main>
   );
 }

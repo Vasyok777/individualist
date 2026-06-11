@@ -5,7 +5,7 @@ import { Container, CTAButton, Title } from "@/components/ui";
 
 export function HowItLooks() {
   return (
-    <section id="how-it-looks" className="py-12 md:py-20 scroll-mt-22">
+    <section className="py-12 md:py-20 scroll-mt-22">
       <Container>
         <Title className="text-[#010205] mb-10 md:mb-16">
           ЯК ЦЕ
@@ -44,7 +44,10 @@ export function HowItLooks() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4 md:gap-15 py-4 px-4 md:py-5 md:px-6.25 rounded-2xl md:rounded-[20px] bg-charcoal mb-3.75">
+        <div
+          id="how-it-looks"
+          className="flex items-center gap-4 md:gap-15 py-4 px-4 md:py-5 md:px-6.25 rounded-2xl md:rounded-[20px] bg-charcoal mb-3.75"
+        >
           <TelegramSvg />
           <p className="text-white text-lg md:text-3xl leading-tight md:leading-7.75 tracking-[-1.5px]">
             <span className="font-semibold">Платформа:</span>
@@ -69,7 +72,10 @@ export function HowItLooks() {
           </div>
         </div>
 
-        <div id="checkout" className="flex justify-center mt-12 md:mt-21.75 scroll-mt-22">
+        <div
+          id="checkout"
+          className="flex justify-center mt-12 md:mt-21.75 scroll-mt-22"
+        >
           <CTAButton href="#checkout">ОТРИМАТИ ДОСТУП</CTAButton>
         </div>
       </Container>

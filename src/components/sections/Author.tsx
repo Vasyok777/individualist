@@ -23,13 +23,13 @@ export function Author() {
         </Title>
         <div className="flex flex-col md:flex-row md:items-start md:gap-10 gap-8 mb-16 md:mb-26">
           <div className="hidden md:block w-100 shrink-0"></div>
-          <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-8 flex-1 max-md:mt-8 md:-translate-y-8.75">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-8 flex-1 md:-translate-y-8.75">
             <img
-              src="/author.png"
+              src="/author.JPG"
               alt="Міла — автор воркшопу Go-To-Market"
-              className="w-full md:w-85 shrink-0 h-auto object-cover object-top"
+              className="w-54.75 h-80.25 ml-auto mr-16 my-6 md:my-0 md:mx-0 md:w-85 md:h-auto shrink-0 object-cover object-top"
             />
-            <div className="flex flex-col gap-4 text-[23px] italic font-medium leading-6 tracking-[-1.15px] text-charcoal">
+            <div className="flex flex-col gap-4 text-[19px] md:text-[23px] italic font-medium leading-6 tracking-[-1.15px] text-charcoal">
               <p>Привіт, давайте знайомитись 🤝🙂</p>
               <p>
                 Мене звати Міла, я займаюся маркетингом{" "}
@@ -42,7 +42,7 @@ export function Author() {
                 Викладаю digital marketing у Projector Institute.
               </p>
               <p>
-                Працювала із такими брендами, як UNICEF, Yev Roshe та багато
+                Працювала із такими брендами, як UNICEF, Yves Rocher та багато
                 інших.
               </p>
             </div>

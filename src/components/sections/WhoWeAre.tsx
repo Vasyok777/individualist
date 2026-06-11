@@ -17,7 +17,8 @@ export function WhoWeAre() {
           </div>
           <div className="flex flex-col gap-4 md:gap-6 md:pt-6">
             <p className="text-[17px] md:text-[23px] font-medium leading-6 md:leading-7.25 tracking-[-0.85px] md:tracking-[-1.15px] text-muted">
-              Individualist Agency — маркетингова міжнародна агенція.{" "}
+              <strong className="font-extrabold">Individualist Agency</strong>{" "}
+              — маркетингова міжнародна агенція.{" "}
               <strong className="font-extrabold">
                 Наш основний ринок, це Сполучені Штати Америки
               </strong>
@@ -26,10 +27,10 @@ export function WhoWeAre() {
                 Польщі, Франції та Об&apos;єднаних Арабських Еміратах.
               </strong>
             </p>
-            <p className="text-[22px] md:text-[30px] font-medium leading-6.5 md:leading-7.25 tracking-[-1.1px] md:tracking-[-1.5px] text-muted">
+            <p className="text-[17px] md:text-[23px] font-extrabold leading-6 md:leading-7.25 tracking-[-0.85px] md:tracking-[-1.15px] text-muted">
               Міжнародний напрямок, це основа нашої роботи та досвіду.
             </p>
-            <p className="text-[22px] md:text-[30px] font-normal leading-6.5 md:leading-7.25 tracking-[-1.1px] md:tracking-[-1.5px] text-muted">
+            <p className="text-[17px] md:text-[23px] font-medium leading-6 md:leading-7.25 tracking-[-0.85px] md:tracking-[-1.15px] text-muted">
               Саме тому ми добре розуміємо особливості аудиторії, поведінку
               споживачів та підхід до розвитку бізнесів на різних ринках.
             </p>

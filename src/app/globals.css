@@ -4,6 +4,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-in.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 @theme {
   --color-accent: #f6ff4b;

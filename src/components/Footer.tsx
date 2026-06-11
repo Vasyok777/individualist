@@ -62,22 +62,20 @@ export function Footer() {
               <ul className="flex flex-col gap-4 md:gap-7.5">
                 {FOOTER_LEGAL_LINKS.map((link) => (
                   <li key={link.label}>
-                    {link.href.endsWith(".pdf") ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white text-xl font-medium leading-5 transition-colors hover:text-accent"
-                      >
-                        {link.label}
-                      </a>
-                    ) : (
+                    {link.href.startsWith("#") ? (
                       <ScrollLink
                         href={link.href}
                         className="text-white text-xl font-medium leading-5 transition-colors hover:text-accent"
                       >
                         {link.label}
                       </ScrollLink>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-white text-xl font-medium leading-5 transition-colors hover:text-accent"
+                      >
+                        {link.label}
+                      </Link>
                     )}
                   </li>
                 ))}
