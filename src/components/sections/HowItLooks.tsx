@@ -2,23 +2,23 @@ import Image from "next/image";
 import { PREVIEW_CARDS, PRICING } from "@/lib/content";
 import { DollarSvg, TelegramSvg } from "@/components/icons";
 import { Container, CTAButton, Title } from "@/components/ui";
+import { AnimateIn } from "@/components/AnimateIn";
 
 export function HowItLooks() {
   return (
     <section className="py-12 md:py-20 scroll-mt-22">
       <Container>
-        <Title className="text-[#010205] mb-10 md:mb-16">
-          ЯК ЦЕ
-          <br />
-          ВИГЛЯДАЄ:
-        </Title>
+        <AnimateIn>
+          <Title className="text-[#010205] mb-10 md:mb-16">
+            ЯК ЦЕ
+            <br />
+            ВИГЛЯДАЄ:
+          </Title>
+        </AnimateIn>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-3.75">
           {PREVIEW_CARDS.map((card, i) => (
-            <div
-              key={card.num}
-              className="border-2 border-black rounded-2xl md:rounded-[20px]"
-            >
+            <AnimateIn key={card.num} delay={80 + i * 100} className="border-2 border-black rounded-2xl md:rounded-[20px]">
               <div className="pt-5.5 px-1.75 pb-7.5">
                 <div className="relative w-full h-95 md:h-99.25 rounded-2xl md:rounded-[20px] overflow-hidden mb-5">
                   <Image
@@ -40,43 +40,49 @@ export function HowItLooks() {
                   </p>
                 </div>
               </div>
-            </div>
+            </AnimateIn>
           ))}
         </div>
 
-        <div
-          id="how-it-looks"
-          className="flex items-center gap-4 md:gap-15 py-4 px-4 md:py-5 md:px-6.25 rounded-2xl md:rounded-[20px] bg-charcoal mb-3.75"
-        >
-          <TelegramSvg />
-          <p className="text-white text-lg md:text-3xl leading-tight md:leading-7.75 tracking-[-1.5px]">
-            <span className="font-semibold">Платформа:</span>
-            <span className="font-medium"> закрита група у Telegram</span>
-          </p>
-        </div>
-
-        <div className="flex items-center gap-4 md:gap-15 py-6 px-4 md:py-11 md:px-6.25 rounded-2xl md:rounded-[20px] border-2 border-black bg-accent">
-          <DollarSvg />
-          <div>
-            <div className="flex items-baseline gap-2">
-              <span className="text-charcoal text-lg md:text-3xl font-semibold leading-tight md:leading-7.75 tracking-[-1.5px]">
-                {PRICING.label}
-              </span>
-              <span className="text-charcoal text-3xl md:text-[50px] font-semibold leading-tight md:leading-7.75 tracking-[-2.5px]">
-                {PRICING.amount}
-              </span>
-            </div>
-            <p className="text-charcoal text-lg md:text-3xl font-bold italic leading-tight md:leading-7.75 tracking-[-1.5px]">
-              {PRICING.note}
+        <AnimateIn delay={100}>
+          <div
+            id="how-it-looks"
+            className="flex items-center gap-4 md:gap-15 py-4 px-4 md:py-5 md:px-6.25 rounded-2xl md:rounded-[20px] bg-charcoal mb-3.75"
+          >
+            <TelegramSvg />
+            <p className="text-white text-lg md:text-3xl leading-tight md:leading-7.75 tracking-[-1.5px]">
+              <span className="font-semibold">Платформа:</span>
+              <span className="font-medium"> закрита група у Telegram</span>
             </p>
           </div>
-        </div>
+        </AnimateIn>
+
+        <AnimateIn delay={180}>
+          <div className="flex items-center gap-4 md:gap-15 py-6 px-4 md:py-11 md:px-6.25 rounded-2xl md:rounded-[20px] border-2 border-black bg-accent">
+            <DollarSvg />
+            <div>
+              <div className="flex items-baseline gap-2">
+                <span className="text-charcoal text-lg md:text-3xl font-semibold leading-tight md:leading-7.75 tracking-[-1.5px]">
+                  {PRICING.label}
+                </span>
+                <span className="text-charcoal text-3xl md:text-[50px] font-semibold leading-tight md:leading-7.75 tracking-[-2.5px]">
+                  {PRICING.amount}
+                </span>
+              </div>
+              <p className="text-charcoal text-lg md:text-3xl font-bold italic leading-tight md:leading-7.75 tracking-[-1.5px]">
+                {PRICING.note}
+              </p>
+            </div>
+          </div>
+        </AnimateIn>
 
         <div
           id="checkout"
           className="flex justify-center mt-12 md:mt-21.75 scroll-mt-22"
         >
-          <CTAButton href="#checkout">ОТРИМАТИ ДОСТУП</CTAButton>
+          <AnimateIn delay={100}>
+            <CTAButton href="#checkout">ОТРИМАТИ ДОСТУП</CTAButton>
+          </AnimateIn>
         </div>
       </Container>
     </section>

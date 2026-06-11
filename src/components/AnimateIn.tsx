@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import React from "react";
 
 interface AnimateInProps {
   children: React.ReactNode;
   delay?: number;
   className?: string;
+  as?: string;
 }
 
-export function AnimateIn({ children, delay = 0, className = "" }: AnimateInProps) {
-  const ref = useRef<HTMLDivElement>(null);
+export function AnimateIn({ children, delay = 0, className = "", as = "div" }: AnimateInProps) {
+  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -29,13 +31,9 @@ export function AnimateIn({ children, delay = 0, className = "" }: AnimateInProp
     return () => observer.disconnect();
   }, []);
 
-  return (
-    <div
-      ref={ref}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={`animate-in ${className}`}
-    >
-      {children}
-    </div>
+  return React.createElement(
+    as,
+    { ref, style: { transitionDelay: `${delay}ms` }, className: `animate-in ${className}`.trim() },
+    children
   );
 }

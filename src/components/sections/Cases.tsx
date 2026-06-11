@@ -1,6 +1,7 @@
 import { CASES } from "@/lib/content";
 import { InstagramIcon } from "@/components/icons";
 import { Container, Title } from "@/components/ui";
+import { AnimateIn } from "@/components/AnimateIn";
 import type { CaseCard } from "@/types";
 
 const BAR_IMAGES = [
@@ -11,9 +12,9 @@ const BAR_IMAGES = [
   "/case/12.JPG",
 ];
 
-function Card({ card }: { card: CaseCard }) {
+function Card({ card, delay }: { card: CaseCard; delay: number }) {
   return (
-    <div className="pt-[14.685px] pr-[14.55px] pb-[13.467px] pl-[14.685px] flex flex-col items-center rounded-2xl md:rounded-[20px] border border-black/50 bg-white">
+    <AnimateIn delay={delay} className="pt-[14.685px] pr-[14.55px] pb-[13.467px] pl-[14.685px] flex flex-col items-center rounded-2xl md:rounded-[20px] border border-black/50 bg-white">
       <img
         src={card.image}
         alt={card.name}
@@ -28,7 +29,7 @@ function Card({ card }: { card: CaseCard }) {
           <span className="font-extrabold">{card.badgeValue}</span>
         </p>
       </div>
-    </div>
+    </AnimateIn>
   );
 }
 
@@ -37,7 +38,7 @@ export function Cases() {
     <section id="cases" className="py-12 md:py-15">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-7.5 gap-y-4.5 mb-12 md:mb-25">
-          <div className="flex flex-col gap-6 mb-4 lg:mb-0 lg:items-center lg:justify-center lg:gap-10">
+          <AnimateIn className="flex flex-col gap-6 mb-4 lg:mb-0 lg:items-center lg:justify-center lg:gap-10">
             <Title className="text-[#010205]">
               [ НАШІ&nbsp;
               <br className="hidden md:block" />
@@ -53,16 +54,16 @@ export function Cases() {
                 по всьому світу
               </p>
             </div>
-          </div>
-          {CASES.map((card) => (
-            <Card key={card.name} card={card} />
+          </AnimateIn>
+          {CASES.map((card, i) => (
+            <Card key={card.name} card={card} delay={80 + i * 80} />
           ))}
         </div>
       </Container>
 
       <div className="bg-accent">
         <Container>
-          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-5 py-5 md:py-0 md:h-33">
+          <AnimateIn className="flex flex-col md:flex-row md:items-center gap-4 md:gap-5 py-5 md:py-0 md:h-33">
             <div className="flex items-center gap-5 shrink-0">
               <p className="text-xl md:text-[30px] font-semibold leading-tight md:leading-7.25 tracking-[-1.5px] text-charcoal">
                 Та багато інших
@@ -90,7 +91,7 @@ export function Cases() {
                 />
               ))}
             </div>
-          </div>
+          </AnimateIn>
         </Container>
       </div>
     </section>

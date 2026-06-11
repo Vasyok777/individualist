@@ -15,7 +15,7 @@ export function Footer() {
         {/* Mobile layout */}
         <div className="flex flex-col md:hidden">
           <Link href="/" aria-label="На головну" className="mb-9">
-            <Logo variant="light" width={214} />
+            <Logo variant="light" width={278} />
           </Link>
 
           <nav aria-label="Навігація по сторінці" className="mb-7.5">

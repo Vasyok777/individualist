@@ -1,29 +1,31 @@
 import { AUTHOR_EDUCATION } from "@/lib/content";
 import { ArrowRightCircleIcon } from "@/components/icons";
 import { Container, CTAButton, Title } from "@/components/ui";
+import { AnimateIn } from "@/components/AnimateIn";
 
 export function Author() {
   return (
     <section id="author" className="py-5 md:pt-17.5 md:pb-20">
       <Container>
-        {/* Intro */}
-        <Title className="text-[#010205] shrink-0 relative z-1">
-          АВТОР ВОРКШОПУ
-          <br />
-          GO-TO-
-          <span className="relative inline-block">
-            <img
-              src="/highlight-author-title.svg"
-              alt=""
-              aria-hidden
-              className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-auto pointer-events-none z-[-1]"
-            />
-            <span className="relative">MARKET:</span>
-          </span>
-        </Title>
+        <AnimateIn>
+          <Title className="text-[#010205] shrink-0 relative z-1">
+            АВТОР ВОРКШОПУ
+            <br />
+            GO-TO-
+            <span className="relative inline-block">
+              <img
+                src="/highlight-author-title.svg"
+                alt=""
+                aria-hidden
+                className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-auto pointer-events-none z-[-1]"
+              />
+              <span className="relative">MARKET:</span>
+            </span>
+          </Title>
+        </AnimateIn>
         <div className="flex flex-col md:flex-row md:items-start md:gap-10 gap-8 mb-16 md:mb-26">
           <div className="hidden md:block w-100 shrink-0"></div>
-          <div className="flex flex-col md:flex-row md:items-center md:gap-8 flex-1 md:-translate-y-8.75">
+          <AnimateIn delay={120} className="flex flex-col md:flex-row md:items-center md:gap-8 flex-1 md:-translate-y-8.75">
             <img
               src="/author.JPG"
               alt="Міла — автор воркшопу Go-To-Market"
@@ -46,12 +48,13 @@ export function Author() {
                 інших.
               </p>
             </div>
-          </div>
+          </AnimateIn>
         </div>
 
-        {/* Education */}
         <div>
-          <Title className="text-[#010205] mb-10 md:mb-16">МОЯ ОСВІТА</Title>
+          <AnimateIn>
+            <Title className="text-[#010205] mb-10 md:mb-16">МОЯ ОСВІТА</Title>
+          </AnimateIn>
           <div className="flex flex-col md:flex-row md:items-start md:gap-33 gap-10 mb-10 md:mb-16">
             <div className="hidden md:block shrink-0 -mb-25 lg:-ml-50">
               <img
@@ -63,18 +66,20 @@ export function Author() {
             </div>
             <ul className="flex flex-col gap-8 flex-1">
               {AUTHOR_EDUCATION.map((item, i) => (
-                <li key={i} className="flex items-center gap-6 md:gap-10">
+                <AnimateIn key={i} delay={80 + i * 100} as="li" className="flex items-center gap-6 md:gap-10">
                   <ArrowRightCircleIcon className="shrink-0 mt-0.5" />
                   <span className="text-[23px] font-medium leading-6 tracking-[-1.15px] text-charcoal">
                     {item}
                   </span>
-                </li>
+                </AnimateIn>
               ))}
             </ul>
           </div>
-          <div className="flex justify-center">
-            <CTAButton href="/#checkout">ДОЛУЧИТИСЯ ДО ІНТЕНСИВУ</CTAButton>
-          </div>
+          <AnimateIn delay={200}>
+            <div className="flex justify-center">
+              <CTAButton href="/#checkout">ДОЛУЧИТИСЯ ДО ІНТЕНСИВУ</CTAButton>
+            </div>
+          </AnimateIn>
         </div>
       </Container>
     </section>
