@@ -4,7 +4,7 @@ import { Container, CTAButton, Title } from "@/components/ui";
 
 export function Author() {
   return (
-    <section id="author" className="py-15 md:pt-17.5 md:pb-20">
+    <section id="author" className="py-5 md:pt-17.5 md:pb-20">
       <Container>
         {/* Intro */}
         <Title className="text-[#010205] shrink-0 relative z-1">
