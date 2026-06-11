@@ -18,7 +18,7 @@ function Card({ card, delay }: { card: CaseCard; delay: number }) {
       <img
         src={card.image}
         alt={card.name}
-        className="w-4/5 mx-auto md:mx-0 md:w-full h-105 md:h-68.75 object-cover mb-6 md:mb-7.5"
+        className="w-4/5 mx-auto md:mx-0 md:w-full h-105 md:h-68.75 object-fill md:object-cover mb-6 md:mb-7.5"
       />
       <p className="text-2xl md:text-[30px] font-medium leading-none text-left w-full text-ink mb-6 md:mb-7.5">
         {card.name}

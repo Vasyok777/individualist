@@ -25,7 +25,7 @@ export const CASES: CaseCard[] = [
     name: "ELLA&EDEN",
     badgeLabel: "Напрямок робіт: повний комплекс у напрямку комунікацій.",
     badgeValue: "Ринок США",
-    image: "/case/3.png",
+    image: "/case/3.JPG",
   },
   {
     name: "WauDog",
