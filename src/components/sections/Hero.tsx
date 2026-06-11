@@ -1,10 +1,10 @@
 import { Container } from "@/components/ui/Container";
 
 const FEATURES = [
-  "[ Максимум практики та дієвих інструментів ]",
-  "[ Аудіо-подкасти, які зручно слухати будь-де ]",
-  "[ Закрита група у Telegram ]",
-  "[ Готові шаблони та покрокові інструкції ]",
+  "[ Максимум практики та дієвих інструментів ]",
+  "[ Аудіо-подкасти, які зручно слухати будь-де ]",
+  "[ Закрита група у Telegram ]",
+  "[ Готові шаблони та покрокові інструкції ]",
 ];
 
 export function Hero() {
@@ -13,14 +13,14 @@ export function Hero() {
       <img
         src="/hero.png"
         alt=""
-        className="w-full h-[400px] md:h-[577px] object-cover"
+        className="hero-fade-in w-full h-[400px] md:h-[577px] object-cover"
       />
 
       <Container className="max-w-[1346px]">
-        <div className="relative z-10 -mt-50 md:-mt-80 bg-white rounded-[16px] md:rounded-[30px] p-6 md:pt-9 md:pr-12.5 md:pb-10 md:pl-15">
+        <div className="hero-fade-up relative z-10 -mt-50 md:-mt-80 bg-white rounded-[16px] md:rounded-[30px] p-6 md:pt-9 md:pr-12.5 md:pb-10 md:pl-15" style={{ animationDelay: "150ms" }}>
           <div className="relative mb-6 md:mb-20">
             <div className="flex flex-row justify-between items-start mb-4 md:hidden">
-              <div className="bg-accent rounded-2xl px-5 py-4">
+              <div className="hero-slide-in bg-accent rounded-2xl px-5 py-4" style={{ animationDelay: "400ms" }}>
                 <p className="text-[15px] font-medium italic leading-tight text-charcoal">
                   5-денний інтенсивний
                   <br />
@@ -31,12 +31,13 @@ export function Hero() {
                 src="/hero-blesk.png"
                 alt=""
                 aria-hidden
-                className="w-16 h-16 object-contain"
+                className="hero-fade-up w-16 h-16 object-contain"
+                style={{ animationDelay: "500ms" }}
               />
             </div>
 
             <div className="hidden md:flex absolute top-0 right-0 flex-col items-end gap-10">
-              <div className="bg-accent rounded-[17px] w-107 pt-6.5 pr-7.75 pb-6.5 pl-12.25">
+              <div className="hero-slide-in bg-accent rounded-[17px] w-107 pt-6.5 pr-7.75 pb-6.5 pl-12.25" style={{ animationDelay: "400ms" }}>
                 <p className="font-bold italic text-charcoal text-[30.588px] leading-[32.325px] tracking-[-1.529px]">
                   5-денний інтенсивний
                   <br />
@@ -47,11 +48,16 @@ export function Hero() {
                 src="/hero-blesk.png"
                 alt=""
                 aria-hidden
-                className="h-[170px] mr-10 object-contain"
+                className="hero-fade-up h-[170px] mr-10 object-contain"
+                style={{ animationDelay: "550ms" }}
               />
             </div>
+
             <div className="pt-2 md:pt-15">
-              <h1 className="text-[32px] md:text-[78.021px] font-bold uppercase leading-[1.05] md:leading-[82.451px] tracking-[-2px] md:tracking-[-3.901px] text-charcoal">
+              <h1
+                className="hero-fade-up text-[32px] md:text-[78.021px] font-bold uppercase leading-[1.05] md:leading-[82.451px] tracking-[-2px] md:tracking-[-3.901px] text-charcoal"
+                style={{ animationDelay: "250ms" }}
+              >
                 <span className="relative inline-block">
                   <img
                     src="/hero-vector.svg"
@@ -68,7 +74,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:flex gap-4 md:gap-12.5">
+          <div className="hero-fade-up grid grid-cols-2 md:flex gap-4 md:gap-12.5" style={{ animationDelay: "450ms" }}>
             {FEATURES.map((feature) => (
               <p
                 key={feature}
@@ -77,7 +83,7 @@ export function Hero() {
                 {feature.endsWith(" ]") ? (
                   <>
                     {feature.slice(0, -2)}
-                    {" "}
+                    {" "}
                     {"]"}
                   </>
                 ) : (
