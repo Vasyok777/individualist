@@ -17,7 +17,7 @@ export function ForWhom() {
           {AUDIENCE_ITEMS.map((item, i) => (
             <AnimateIn key={item.text} delay={Math.min(i * 80, 400)} as="li" className="flex flex-col gap-3.75 md:gap-7.5">
               <BrandMark />
-              <span className="text-white text-xl md:text-[30px] font-medium leading-6 md:leading-7.75 tracking-[-1.5px]">
+              <span className="text-white text-[18px] md:text-[30px] font-medium leading-6 md:leading-7.75 tracking-[-1.5px]">
                 {item.text}
               </span>
             </AnimateIn>

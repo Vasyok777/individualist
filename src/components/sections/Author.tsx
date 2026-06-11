@@ -7,8 +7,8 @@ export function Author() {
   return (
     <section id="author" className="py-5 md:pt-17.5 md:pb-20">
       <Container>
-        <AnimateIn>
-          <Title className="text-[#010205] shrink-0 relative z-1">
+        <AnimateIn className="relative z-10">
+          <Title className="text-[#010205] shrink-0">
             АВТОР ВОРКШОПУ
             <br />
             GO-TO-
@@ -64,11 +64,11 @@ export function Author() {
                 className="w-107 h-107 object-contain"
               />
             </div>
-            <ul className="flex flex-col gap-8 flex-1">
+            <ul className="flex flex-col gap-5 md:gap-8 flex-1">
               {AUTHOR_EDUCATION.map((item, i) => (
                 <AnimateIn key={i} delay={80 + i * 100} as="li" className="flex items-center gap-6 md:gap-10">
                   <ArrowRightCircleIcon className="shrink-0 mt-0.5" />
-                  <span className="text-[23px] font-medium leading-6 tracking-[-1.15px] text-charcoal">
+                  <span className="text-[18px] md:text-[23px] font-medium leading-6 tracking-[-1.15px] text-charcoal">
                     {item}
                   </span>
                 </AnimateIn>
