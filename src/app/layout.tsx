@@ -10,7 +10,7 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://individualist.agency";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://individualist.com.ua";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     description:
       "5-денний інтенсивний воркшоп. Покрокова система виходу бренду на міжнародний ринок.",
     images: ["/hero.png"],
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
   robots: {
     index: true,
