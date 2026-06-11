@@ -74,12 +74,6 @@ export function Footer() {
               >
                 {FOOTER_CONTACTS.phone}
               </a>
-              <a
-                href={`tel:${FOOTER_CONTACTS.phone2.replace(/\s/g, "")}`}
-                className="text-white text-[20px] font-medium leading-6 transition-colors hover:text-accent"
-              >
-                {FOOTER_CONTACTS.phone2}
-              </a>
             </address>
           </div>
         </div>
@@ -111,12 +105,6 @@ export function Footer() {
                   className="text-white text-xl font-medium leading-6 transition-colors hover:text-accent"
                 >
                   {FOOTER_CONTACTS.phone}
-                </a>
-                <a
-                  href={`tel:${FOOTER_CONTACTS.phone2.replace(/\s/g, "")}`}
-                  className="text-white text-xl font-medium leading-6 transition-colors hover:text-accent"
-                >
-                  {FOOTER_CONTACTS.phone2}
                 </a>
               </address>
             </div>
