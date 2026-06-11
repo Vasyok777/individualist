@@ -56,27 +56,27 @@ export function WhoWeAre() {
                   src="/highlight-award.svg"
                   alt=""
                   aria-hidden
-                  className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full"
+                  className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-[60%] md:w-full"
                 />
-                <p className="relative z-10 text-[22px] md:text-[30px] font-bold uppercase leading-6.5 md:leading-7.25 tracking-[-1.1px] md:tracking-[-1.5px] text-black">
+                <p className="relative z-10 text-[20px] md:text-[30px] font-bold uppercase leading-6.5 md:leading-7.25 tracking-[-1.1px] md:tracking-[-1.5px] text-black">
                   COMMUNICATION DESIGN:
                   <br />
                   PRODUCT & SERVICE BRANDING
                 </p>
               </div>
             </div>
-            <div className="flex flex-row md:block items-center gap-5 shrink-0">
-              <div className="relative shrink-0">
+            <div className="flex flex-row md:block items-center gap-4 shrink-0">
+              <div className="relative w-1/2 md:w-auto shrink-0">
                 <img
                   src="/award.png"
                   alt="London Design Awards Gold Winner"
-                  className="w-44 md:w-72 rounded-[10px]"
+                  className="w-full max-h-55 md:max-h-none object-cover md:w-72 rounded-[20px]"
                 />
-                <button className="absolute -right-5 top-1/2 -translate-y-1/2 w-11.75 h-11.75 rounded-full bg-accent flex items-center justify-center">
-                  <ArrowIcon className="w-3 h-2.75 shrink-0" />
+                <button className="absolute -right-3 top-1/2 -translate-y-1/2 w-6.5 h-6.5 rounded-full bg-accent flex items-center justify-center">
+                  <ArrowIcon className="w-2 h-1.75 shrink-0" />
                 </button>
               </div>
-              <p className="flex-1 text-[13px] md:hidden italic leading-4.25 tracking-[-0.65px] text-muted">
+              <p className="w-1/2 md:hidden text-[12px] italic leading-5 tracking-[-0.5px] text-muted">
                 <strong className="font-semibold">London Design Awards</strong>
                 <span className="font-medium"> — це престижна міжнародна премія, яка відзначає найкращі досягнення у сфері дизайну, брендингу та комунікацій.</span>
               </p>

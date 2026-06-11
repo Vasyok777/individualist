@@ -29,29 +29,18 @@ export function Results() {
       <Container>
         <AnimateIn>
           <Title className="text-[#010205] mb-10 md:mb-24.25">
-            ВИ ОТРИМУЄТЕ ЧІТКУ ПРАКТИЧНУ
-            <br />
-            <span className="relative block md:inline-block">
-              <img
-                src="/highlight-line-2.svg"
-                alt=""
-                aria-hidden
-                className="absolute top-1/2 -translate-y-1/2 left-0 max-md:w-[70%] md:w-full h-auto pointer-events-none z-[-1]"
-              />
-              <span className="relative">
-                ІНСТРУКЦІЮ ТА ЗНАННЯ, <span className="md:hidden">ПІСЛЯ</span>
-              </span>
-            </span>
-            <span className="hidden md:inline-block">&nbsp;ПІСЛЯ</span>
-            <span className="relative block md:inline-block">
+            [ ЯКІ{" "}
+            <span className="relative inline-block">
               <img
                 src="/highlight-line-3.svg"
                 alt=""
                 aria-hidden
-                className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-auto pointer-events-none z-[-1]"
+                className="absolute top-1/2 translate-y-[-30%] left-0 w-full h-auto pointer-events-none z-[-1]"
               />
-              <span className="relative">ЯКИХ ВИ ЗМОЖЕТЕ:</span>
+              <span className="relative">НАВИЧКИ ВИ</span>
             </span>
+            <br />
+            ЗДОБУДЕТЕ? ]
           </Title>
         </AnimateIn>
         <div className="grid gap-y-4 md:grid-cols-2 md:gap-x-18 md:gap-y-0 mb-10 md:mb-27.5">
