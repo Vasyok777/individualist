@@ -224,6 +224,7 @@ export const FOOTER_LEGAL_LINKS: FooterLink[] = [
 export const FOOTER_CONTACTS = {
   email: "individualistua@gmail.com",
   phone: "+48 889 705 849",
+  phone2: "+380 93 467 65 95",
 } as const;
 
 export const AUTHOR_EDUCATION = [
