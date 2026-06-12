@@ -78,7 +78,7 @@ export function HowItLooks() {
 
         <div id="checkout" className="flex justify-center mt-12 md:mt-21.75 scroll-mt-22">
           <AnimateIn delay={100} className="w-full flex justify-center">
-            <CTAButton href="#checkout">ОТРИМАТИ ДОСТУП</CTAButton>
+            <CTAButton href="https://secure.wayforpay.com/button/ba1ca72f2fbf4">ОТРИМАТИ ДОСТУП</CTAButton>
           </AnimateIn>
         </div>
       </Container>

@@ -73,7 +73,7 @@ export function International() {
 
         <AnimateIn delay={320}>
           <div className="flex justify-center">
-            <CTAButton href="#how-it-looks">ОТРИМАТИ ДОСТУП</CTAButton>
+            <CTAButton href="https://secure.wayforpay.com/button/ba1ca72f2fbf4">ОТРИМАТИ ДОСТУП</CTAButton>
           </div>
         </AnimateIn>
       </Container>

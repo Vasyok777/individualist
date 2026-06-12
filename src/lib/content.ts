@@ -235,7 +235,7 @@ export const AUTHOR_EDUCATION = [
 ] as const;
 
 export const PREVIEW_CARDS: PreviewCard[] = [
-  { num: "01", bold: "Готові шаблони", text: "для практичного аналізу" },
+  { num: "01", bold: "Готові шаблони", text: " для практичного аналізу" },
   {
     num: "02",
     bold: "Аудіо-подкасти",

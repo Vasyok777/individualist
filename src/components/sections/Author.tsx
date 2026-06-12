@@ -77,7 +77,7 @@ export function Author() {
           </div>
           <AnimateIn delay={200}>
             <div className="flex justify-center">
-              <CTAButton href="/#checkout">ДОЛУЧИТИСЯ ДО ІНТЕНСИВУ</CTAButton>
+              <CTAButton href="https://secure.wayforpay.com/button/ba1ca72f2fbf4">ДОЛУЧИТИСЯ ДО ІНТЕНСИВУ</CTAButton>
             </div>
           </AnimateIn>
         </div>
